@@ -41,5 +41,5 @@ end
  
  
  def reduce_to_any_true(source_array)
-   source_array.reduce(0) { |result, val| val || result }
+   source_array.reduce(0) { |result, val| (val || result) == true }
  end
